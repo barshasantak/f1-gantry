@@ -1,7 +1,7 @@
 # F1-Gantry
 A production-grade, native **Swift / SwiftUI** application simulating the official FIA Formula 1 starting gantry system. It features high-fidelity visual rendering, a zero-dependency in-memory audio synthesizer, a non-blocking monotonic state machine, and sub-millisecond reaction telemetry with jump-start penalty validation.
 
-
+ 
 ## 🏎️ Project Overview
 
 In Formula 1, standing starts are critical tactical moments where driver reaction times (typically between 180ms and 250ms) can dictate the outcome of a Grand Prix. 
