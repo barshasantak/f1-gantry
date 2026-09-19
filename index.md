@@ -3,7 +3,7 @@ A production-grade, native **Swift / SwiftUI** application simulating the offici
 
 <br>
 
-![F1-Gantry](https://raw.githubusercontent.com/barshasantak/f1-gantry/main/F1-Gantry.png)
+![F1-Gantry](https://raw.githubusercontent.com/barshasantak/f1-gantry/main/f1-gantry.png)
 
 <br>
  
