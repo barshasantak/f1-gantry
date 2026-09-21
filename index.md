@@ -33,6 +33,37 @@ The timing sequences, light layout, and penalties implemented in this simulator 
 | **Jump Start (False Start)** | **Art. 48.1.a:** A car moves before the red lights are extinguished. Penalized with a **5-second time penalty** or drive-through. | If **"START RACE CAR"** is pressed before `currentState == .lightsOutGo`, a **FALSE START** is flagged, the run aborts, and a 5.0s penalty is logged. |
 
 
+## ⏱️ Monotonic Telemetry & Benchmark Evaluation
+
+### Sub-Millisecond Measurement
+Wall-clock timing APIs (Date(), gettimeofday()) are prone to clock adjustments (NTP syncs, leap seconds, daylight saving). F1Lights relies on ContinuousClock:
+
+    Guarantees strictly forward-progressing monotonic time.
+
+    Captures timestamps at the exact instant the state machine dispatches .lightsOutGo.
+
+### FIA Benchmark Evaluation
+
+When the user clicks "START RACE CAR", their reaction time is calculated and graded beneath the telemetry line:
+
+
+    0 ms          180 ms          250 ms          350 ms          > 3000 ms
+    ───┼───────────────┼───────────────┼───────────────┼───────────────┼───►
+       │  ALIEN SPEED  │    F1 PRO     │ AVERAGE DRVR  │  SLOW START   │ STALLED
+       │   (< 180ms)   │  (180-250ms)  │  (250-350ms)  │  (> 350ms)    │ (> 3.0s)
+
+
+    < 180 ms — [LIGHTNING REFLEXES (ALIEN SPEED)] (Cyan): Exceptional anticipatory reaction near the limit of human physiological visual/auditory response.
+
+    180 ms – 250 ms — [F1 PRO LEVEL (EXCELLENT)] (Electric Green): Matches the grid average of professional Formula 1 drivers.
+
+    250 ms – 350 ms — [GOOD (AVERAGE DRIVER)] (Amber Gold): Standard passenger-vehicle reflex window.
+
+    > 350 ms — [SLOW START] (Orange): Sluggish launch off the line; vulnerable to being overtaken before Turn 1.
+
+    Premature Click — [PENALTY: +5.0s TIME PENALTY - FIA ART 48.1] (Red): Jump start detected. Sequence is automatically aborted.
+
+
 ## Help and Support
 
 ### Report Issues
