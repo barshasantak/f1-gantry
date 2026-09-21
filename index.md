@@ -45,6 +45,7 @@ Wall-clock timing APIs (Date(), gettimeofday()) are prone to clock adjustments (
 ### Leaderboard
 Top 10 reaction times are stored securely in a leaderboard which can be seen by clicking on the trophy icon 🏆 on the top right corner of the app. 
 This is implemented using Apple's Native CryptoKit: Built into Swift/iOS/macOS since iOS 13 / macOS 10.15. Zero external third-party dependencies.
+
 Tamper-Proof (Authenticated Encryption): AES-GCM includes an authentication tag (Poly1305/GMAC).
 If someone tries to tamper the file in a hex editor and changes even a single bit, decryption fails, preventing corrupted or manipulated high scores.
 
