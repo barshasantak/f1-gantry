@@ -19,6 +19,8 @@ In Formula 1, standing starts are critical tactical moments where driver reactio
 - **Reaction Time Telemetry:** High-precision measurement logging driver response delta upon clicking **"START RACE CAR"**, coupled with false-start jump detection under FIA sporting criteria.
 - **Competitive Timing & Classification:** Persistent tracking and ranking of personal records, telemetry logs, and global leaderboards—filtered strictly by valid, non-infraction reaction times.
 
+📺 Watch a 25-seconds preview on YouTube: [F1-Gantry](https://www.youtube.com/watch?v=1zzPRAYjeLs){:target="_blank"}
+ 
 
 ## 📜 FIA Regulatory Background & Rules
 
