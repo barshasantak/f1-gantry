@@ -17,6 +17,7 @@ In Formula 1, standing starts are critical tactical moments where driver reactio
 - **FIA Variable Abort/Hold Window:** A randomized hold between 1.0 and 4.0 seconds simulating the automated race-start system.
 - **Lights Out Execution:** Instantaneous extinguishment of all red lamps, activation of green clearance lamps for 3.0 seconds, and emission of the 1800 Hz "Go" acoustic burst.
 - **Reaction Time Telemetry:** High-precision measurement logging driver response delta upon clicking **"START RACE CAR"**, coupled with false-start jump detection under FIA sporting criteria.
+- **Competitive Timing & Classification:** Persistent tracking and ranking of personal records, telemetry logs, and global leaderboards—filtered strictly by valid, non-infraction reaction times.
 
 
 ## 📜 FIA Regulatory Background & Rules
