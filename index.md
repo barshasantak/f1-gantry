@@ -58,11 +58,11 @@ When the user clicks "START RACE CAR", their reaction time is calculated and gra
 
 | Reaction Time | Classification | Status |
 | :--- | :--- | :--- |
-| `< 180 ms` | ⚡ **Alien Speed** (Cyan)| Phenomenal reflex |
-| `180 ms – 250 ms` | 🏎️ **F1 Pro** (Electric Green)| Professional level |
-| `250 ms – 350 ms` | 🚗 **Average Driver** (Amber Gold)| Standard human reflex |
-| `350 ms – 3.0 s` | 🐢 **Slow Start** (Orange)| Delayed response |
-| `> 3000 ms` | 🛑 **Stalled** (Red)| False start / Inactive |
+| `< 180 ms` | ⚡ **Alien Speed** (Cyan) | Phenomenal reflex |
+| `180 ms – 250 ms` | 🏎️ **F1 Pro** (Electric Green) | Professional level |
+| `250 ms – 350 ms` | 🚗 **Average Driver** (Amber Gold) | Standard human reflex |
+| `350 ms – 3.0 s` | 🐢 **Slow Start** (Orange) | Delayed response |
+| `> 3000 ms` | 🛑 **Stalled** (Red) | False start / Inactive |
 
 
 
