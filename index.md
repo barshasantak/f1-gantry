@@ -41,9 +41,8 @@ The timing sequences, light layout, and penalties implemented in this simulator 
 ### Sub-Millisecond Measurement
 Wall-clock timing APIs (Date(), gettimeofday()) are prone to clock adjustments (NTP syncs, leap seconds, daylight saving). F1Lights relies on ContinuousClock:
 
-    Guarantees strictly forward-progressing monotonic time.
-
-    Captures timestamps at the exact instant the state machine dispatches .lightsOutGo.
+- Guarantees strictly forward-progressing monotonic time.
+- Captures timestamps at the exact instant the state machine dispatches .lightsOutGo.
 
 ### Leaderboard
 Top 10 reaction times are stored securely in a leaderboard which can be seen by clicking on the trophy icon 🏆 on the top right corner of the app. 
@@ -57,21 +56,14 @@ If someone tries to tamper the file in a hex editor and changes even a single bi
 When the user clicks "START RACE CAR", their reaction time is calculated and graded beneath the telemetry line:
 
 
-    0 ms          180 ms          250 ms          350 ms          > 3000 ms
-    ───┼───────────────┼───────────────┼───────────────┼───────────────┼───►
-       │  ALIEN SPEED  │    F1 PRO     │ AVERAGE DRVR  │  SLOW START   │ STALLED
-       │   (< 180ms)   │  (180-250ms)  │  (250-350ms)  │  (> 350ms)    │ (> 3.0s)
+| Reaction Time | Classification | Status |
+| :--- | :--- | :--- |
+| `< 180 ms` | ⚡ **Alien Speed** (Cyan)| Phenomenal reflex |
+| `180 ms – 250 ms` | 🏎️ **F1 Pro** (Electric Green)| Professional level |
+| `250 ms – 350 ms` | 🚗 **Average Driver** (Amber Gold)| Standard human reflex |
+| `350 ms – 3.0 s` | 🐢 **Slow Start** (Orange)| Delayed response |
+| `> 3000 ms` | 🛑 **Stalled** (Red)| False start / Inactive |
 
-
-    < 180 ms — [LIGHTNING REFLEXES (ALIEN SPEED)] (Cyan): Exceptional anticipatory reaction near the limit of human physiological visual/auditory response.
-
-    180 ms – 250 ms — [F1 PRO LEVEL (EXCELLENT)] (Electric Green): Matches the grid average of professional Formula 1 drivers.
-
-    250 ms – 350 ms — [GOOD (AVERAGE DRIVER)] (Amber Gold): Standard passenger-vehicle reflex window.
-
-    > 350 ms — [SLOW START] (Orange): Sluggish launch off the line; vulnerable to being overtaken before Turn 1.
-
-    Premature Click — [PENALTY: +5.0s TIME PENALTY - FIA ART 48.1] (Red): Jump start detected. Sequence is automatically aborted.
 
 
 ## Help and Support
