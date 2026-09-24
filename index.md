@@ -81,7 +81,9 @@ You can report any issues here: [https://forms.gle/XDUkjJ2TJzEruakX9](https://fo
 
 Please provide clear, detailed information and the correct repository for the issue so it can be properly triaged and addressed. 
 
-  
+### Trademarks
+All Formula 1 trademarks, gantry configurations, and regulatory references belong to Formula One Licensing B.V. and the Fédération Internationale de l'Automobile (FIA).
+
 <br>
   
 <hr>
