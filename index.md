@@ -11,7 +11,7 @@ A production-grade, native **Swift / SwiftUI** application simulating the offici
 
 In Formula 1, standing starts are critical tactical moments where driver reaction times (typically between 180ms and 250ms) can dictate the outcome of a Grand Prix. 
 
-**F1-Gantry** brings the engineering rigor of Formula 1 starting systems to Apple platforms:
+**F1-Gantry** brings the engineering rigor of Formula 1 starting systems to Apple macOS platform:
 - **Dual-Enclosure Gantry:** 5 columns of synchronized red lights across 2 rows, flanked by an integrated green light enclosure (Column 6).
 - **Automated Procedural Countdown:** Sequential activation of red light pairs at exact 1.0-second intervals.
 - **FIA Variable Abort/Hold Window:** A randomized hold between 1.0 and 4.0 seconds simulating the automated race-start system.
